@@ -9,11 +9,11 @@ function App() {
     { id: 1, nombre: "Curso EdGrid", poster: "https://ed.team/cursos/flexbox-grid", descripcion: 'Curso', precio: 35, disponible: true}
   ];
 
-  useEffect(() => {
-    fetch('http://localhost:3000/initialState')
-        .then(response => response.json())
-        .then(data => setcursoSeleccionado(data))
-  })
+  const [data, setData] = useState(dataCursos);
+  const [modalEditar, setModalEditar] = useState(false);
+  const [modalEliminar, setModalEliminar] = useState(false);
+  const [modalInsertar, setModalInsertar] = useState(false);
+
 
   const [cursoSeleccionado, setcursoSeleccionado] = useState({
     id: '',

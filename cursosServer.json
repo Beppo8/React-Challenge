@@ -1,0 +1,22 @@
+{
+  "cursosServer": {
+    "cursos": [
+      {
+        "id": 2,
+        "nombre": "Css",
+        "poster": "",
+        "descripcion": "Awesome curse about flex-box",
+        "precio": 15,
+        "disponible": true
+      },
+      {
+        "id": 2,
+        "nombre": "Css",
+        "poster": "",
+        "descripcion": "Awesome curse about flex-box",
+        "precio": 15,
+        "disponible": true
+      }
+    ]
+  }
+}

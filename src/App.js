@@ -15,13 +15,13 @@ function App() {
   const [modalInsertar, setModalInsertar] = useState(false);
 
 
-  const [cursoSeleccionado, setcursoSeleccionado] = useState({
+  const [cursoSeleccionado, setcursoSeleccionado] = useEffect({
     id: '',
     nombre: '',
     poster: '',
     descripcion: '',
     precio: '',
-    disponible: '',
+    disponible: true,
   });
 
   const seleccionarCurso=(elemento, caso)=>{
@@ -73,7 +73,7 @@ setcursoSeleccionado(elemento);
 
   return (
     <div className="App">
-      <h2>Cursos EdTeam</h2>
+      <h2 className="Header-title">Cursos EdTeam</h2>
       <br />
     <button className="btn btn-success" onClick={()=>abrirModalInsertar()}>Crear Curso</button>
     <br /><br />
@@ -113,7 +113,7 @@ setcursoSeleccionado(elemento);
       <Modal isOpen={modalEditar}>
         <ModalHeader>
           <div>
-            <h3>Editar Curso</h3>
+            <h3><Edi></Edi>tar Curso</h3>
           </div>
         </ModalHeader>
         <ModalBody>
